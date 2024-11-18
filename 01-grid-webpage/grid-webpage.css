@@ -9,83 +9,77 @@
 body {
   margin: 20px;
   font-family: "Roboto", sans-serif;
-  background: var(--primary-color);
 }
-ul,
-li {
-  padding: 0;
-  list-style-type: none;
-}
+
+/* TODO  Change text color to header color from the root variables above */
+
 h1,
 h2,
 h3 {
-  color: var(--header-color);
 }
+
+/* TODO  Change text color to text color from the root variables above */
+
 p {
-  color: var(--text-color);
 }
+
+/* TODO: make the display grid, gap spacing 60px, template columns 3 that are 1fr each, max width 1200px, margin left and right auto and 20px for top and bottom */
+.grid-container {
+}
+
+/* TODO  margin on the top and bottom 40px and top and left and right zero */
+/* TODO add a border to the bottom that is 1px solid and color will be the secondary color */
+/* TODO the grid span should be 3 */
 
 header {
-  max-width: 1200px;
-  margin: 40px 0;
-  /* margin: 100px auto; */
-  border-bottom: 1px solid var(--secondary-color);
-  grid-column: span 3;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 20px auto;
-}
-article.featured {
-  grid-column: span 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  border-bottom: 1px solid var(--secondary-color);
-  padding-bottom: 40px;
-}
-article img,
-article.featured img {
-  width: 100%;
-  border: 4px solid #fff;
-  border-radius: 8px;
-}
-article p,
-article h3 {
-  margin: 20px 10px;
 }
 
+/* TODO span is 3, display grid, 2 columns 1fr each, gap is 60px, align the items center */
+/* TODO make the border bottom solid 1px using the secondary color */
+/* TODO padding to the bottom set to 40px */
+article.featured {
+}
+
+/* TODO: make the width of the images 100%, but a border around it of 4px solid white, give a border radius of 8px */
+article img,
+article.featured img {
+}
+
+/* TODO Margins top and bottom to 20px and left and right 10px */
+/* margin  */
+article p,
+article h3 {
+}
+
+/* TODO Transform the text to capitalize each word*/
 article h3,
 article h2 {
-  text-transform: capitalize;
 }
 /* responsive */
+/* TODO Articles will now span the entire block of the grid */
+/* TODO Articles should go to a two column split (display grid) */
+/* TODO Articles template columns 1fr 1fr */
+/* TODO Articles gap 60px */
+/* TODO Articles align items center */
+
 @media screen and (max-width: 980px) {
   article {
-    grid-column: span 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
   }
 }
 
+/* TODO Articles will now span the entire block of the grid */
+/* TODO Articles should go to a one column split (display block) */
+/* TODO Articles margin 0 20px */
 @media screen and (max-width: 760px) {
   article,
   article.featured {
-    display: block;
-    margin: 0 20px;
   }
 }
 
 /* hover state */
 
+/* TODO Image Hover Scale (1.1) and transform is 0.5s */
+
 article img:hover,
 article.featured img:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s;
 }
